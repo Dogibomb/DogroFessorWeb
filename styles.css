@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #20232A;
+}
+.logo_navbar{
+    height: 70px;
+    width: 130px;
+}
+nav {
+    background-color: #282C34;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+}
+nav ul li a{
+    margin: 0 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+}
+.github_logo{
+    height: 60px;
+    margin-right: auto;
+}
+
+
+
+/* .download-btn {
+    background-color: #7C3AED;
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+.download-btn:hover {
+    background-color: #5B21B6;
+} */
