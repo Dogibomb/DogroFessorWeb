@@ -32,6 +32,11 @@ nav ul li a{
     text-decoration: none;
     color: white;
     font-size: 21px;
+    transition: 0.3s;
+}
+nav ul li a:hover{
+    color: #A78BFA;
+    font-size: 20px;
 }
 .github_logo{
     height: 60px;
@@ -49,6 +54,7 @@ nav ul li a{
     background-color: #2C313C;
     border-radius: 20px;
     margin-top: 40px;
+    margin-bottom: 150px;
 }
 .info .text{
     flex: 0 1 40%;
@@ -69,13 +75,11 @@ nav ul li a{
 .info p{
     color: white;
     font-size: 20px;
-    
-    
 }
 
 .download-btn {
     display: inline-block;
-    background-color: #A78BFA;
+    background-color: #8B5CF6;
     color: white;
     padding: 15px 25px;
     font-size: 17px;
@@ -88,4 +92,57 @@ nav ul li a{
 }
 .download-btn:hover {
     background-color: #5B21B6;
+}
+.footer{
+    padding: 50px;
+    background-color: #2C313C;
+}
+.footer p{
+    max-width: 1600px;
+    margin: 0 auto;
+    color: grey;
+}
+.reviews{
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 150px;
+    background-color: #2C313C;
+    padding: 50px;
+    border-radius: 20px;
+}
+.reviews p{
+    max-width: 350px;
+    margin: 0 auto;
+    color: white;
+    font-size: 20px;
+    
+    
+}
+.reviews h4{
+    max-width: 350px;
+    margin: 0 auto;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 10px;
+    
+    
+}
+.reviews-head{
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: #8B5CF6;
+}
+.reviews-text{
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    color: white;
+    font-size: 20px;
 }
