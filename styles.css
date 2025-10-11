@@ -2,20 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 body {
     background-color: #20232A;
 }
 .logo_navbar{
     height: 70px;
     width: 130px;
+    margin-left: 200px;
+    
 }
 nav {
-    background-color: #282C34;
-    padding: 10px 20px;
+    background-color: #20232A;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 20px;
 }
 nav ul {
     list-style: none;
@@ -32,19 +36,56 @@ nav ul li a{
 .github_logo{
     height: 60px;
     margin-right: auto;
+    margin-right: 200px;
+}
+.info{
+    display: flex;
+    align-items: center;
+    padding: 100px;
+    justify-content: center;
+    padding: 100px 0;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #2C313C;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+.info .text{
+    flex: 0 1 40%;
+    margin: 0;
+}
+.porofessor_showcase{
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    margin: 0;
+}
+.info h2{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 10px;
+    
+}
+.info p{
+    color: white;
+    font-size: 20px;
+    
+    
 }
 
-
-
-/* .download-btn {
-    background-color: #7C3AED;
+.download-btn {
+    display: inline-block;
+    background-color: #A78BFA;
     color: white;
-    padding: 15px 30px;
-    font-size: 20px;
+    padding: 15px 25px;
+    font-size: 17px;
+    font-weight: bold;
     text-decoration: none;
     border-radius: 10px;
-    transition: background 0.3s;
+    transition: background 0.2s;
+    margin-top: 40px;
+    
 }
 .download-btn:hover {
     background-color: #5B21B6;
-} */
+}
