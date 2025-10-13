@@ -2,92 +2,95 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI'
 }
 
 body {
     background-color: #20232A;
+    padding-top: 100px; 
+    color: white;
 }
-.logo_navbar{
-    height: 70px;
-    width: 130px;
-    margin-left: 200px;
-    
-}
-nav {
 
+
+nav{
     display: flex;
     align-items: center;
-    margin: 0 auto;
     justify-content: space-between;
-    margin-top: 5px;
-    
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    
-
+    background-color: #20232A;
+    z-index: 1000;
+    padding: 10px 80px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
+
+.logo_navbar{
+    height: 60px;
+    width: auto;
+}
+
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    
+    gap: 40px;
 }
-nav ul li a{
-    margin: 0 20px;
+
+nav ul li a {
     text-decoration: none;
     color: white;
     font-size: 21px;
     transition: 0.3s;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     color: #A78BFA;
     font-size: 20px;
 }
-.github_logo{
-    height: 60px;
-    margin-right: auto;
-    margin-right: 200px;
-    transition: 0.3s;
 
+.github_logo {
+    height: 55px;
+    transition: 0.3s;
 }
-.github_logo:hover{
-    filter: invert(68%) sepia(28%) saturate(676%) hue-rotate(227deg) brightness(200%) contrast(100%);
+
+.github_logo:hover {
+    filter: invert(68%) sepia(28%) saturate(676%) hue-rotate(227deg) brightness(150%) contrast(100%);
 }
-.info{
+
+
+.info {
     display: flex;
     align-items: center;
-    padding: 100px;
     justify-content: center;
-    padding: 100px 0;
-    max-width: 1600px;
-    margin: 0 auto;
+    gap: 80px;
+    max-width: 1400px;
+    margin: 150px auto;
     background-color: #2C313C;
     border-radius: 20px;
-    margin-top: 40px;
-    margin-bottom: 150px;
+    padding: 80px;
+    flex-wrap: wrap; 
 }
-.info .text{
-    flex: 0 1 40%;
-    margin: 0;
+
+.info .text {
+    flex: 1 1 400px;
 }
-.porofessor_showcase{
-    width: 50%;
+
+.porofessor_showcase {
+    width: 45%;
+    min-width: 300px;
     border-radius: 10px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
-    margin: 0;
 }
-.info h2{
-    color: white;
+
+.info h2 {
     font-size: 50px;
     margin-bottom: 10px;
-    
 }
-.info p{
-    color: white;
+
+.info p {
     font-size: 20px;
+    color: #ddd;
 }
 
 .download-btn {
@@ -99,63 +102,81 @@ nav ul li a:hover{
     font-weight: bold;
     text-decoration: none;
     border-radius: 10px;
-    transition: background 0.2s;
+    transition: background 0.2s, transform 0.2s;
     margin-top: 40px;
-    
 }
+
 .download-btn:hover {
     background-color: #5B21B6;
+    transform: scale(1.05);
 }
-.footer{
-    padding: 50px;
-    background-color: #2C313C;
-}
-.footer p{
-    max-width: 1600px;
-    margin: 0 auto;
-    color: grey;
-}
-.reviews{
-    max-width: 1600px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-bottom: 150px;
-    background-color: #2C313C;
-    padding: 50px;
-    border-radius: 20px;
-}
-.reviews p{
-    max-width: 350px;
-    margin: 0 auto;
-    color: white;
-    font-size: 20px;
-    
-    
-}
-.reviews h4{
-    max-width: 350px;
-    margin: 0 auto;
-    color: white;
-    font-size: 25px;
-    margin-bottom: 10px;
-    
-    
-}
-.reviews-head{
+
+
+.reviews-head {
     max-width: 1600px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     font-size: 50px;
-    color: #8B5CF6;
+    color: #A78BFA;
 }
-.reviews-text{
+
+.reviews-text {
     max-width: 1600px;
-    margin: 0 auto;
+    margin: 20px auto 50px auto;
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
-    color: white;
+    color: #ddd;
     font-size: 20px;
+    text-align: center;
+}
+
+.reviews {
+    max-width: 1400px;
+    margin: 0 auto 150px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    background-color: #2C313C;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.reviews div {
+    background-color: #3B404C;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.reviews div:hover {
+    transform: translateY(-5px);
+}
+
+.reviews h4 {
+    font-size: 23px;
+    margin-bottom: 10px;
+    color: #A78BFA;
+}
+
+.reviews p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #f0f0f0;
+}
+
+
+.footer {
+    padding: 50px;
+    background-color: #2C313C;
+    text-align: center;
+}
+
+.footer p {
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #999;
+    font-size: 14px;
+    line-height: 1.5;
 }
