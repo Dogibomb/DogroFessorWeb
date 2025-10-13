@@ -15,11 +15,19 @@ body {
     
 }
 nav {
-    background-color: #20232A;
+
     display: flex;
     align-items: center;
+    margin: 0 auto;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 5px;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+
 }
 nav ul {
     list-style: none;
@@ -42,6 +50,11 @@ nav ul li a:hover{
     height: 60px;
     margin-right: auto;
     margin-right: 200px;
+    transition: 0.3s;
+
+}
+.github_logo:hover{
+    filter: invert(68%) sepia(28%) saturate(676%) hue-rotate(227deg) brightness(200%) contrast(100%);
 }
 .info{
     display: flex;
